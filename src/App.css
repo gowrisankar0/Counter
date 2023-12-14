@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;600;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.conter{
+  height:auto;
+  width: auto;
+  /* max-width: 100%; */
+  padding:5%;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+.head >h1{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 3%;
+}
+
+.btns{
+  display: flex;
+  padding: 20px;
+}
+.btns>button{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  background-color: rgb(11, 113, 237);
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-weight: bolder;
   color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.8s all;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover{
+  background-color: orange;
+  color: white;
+  transform: scale(0.86);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media only screen and (min-width: 334px) {
+  body {
+   width:auto;
   }
-  to {
-    transform: rotate(360deg);
+  .btns{
+    width: 80%;
   }
 }
